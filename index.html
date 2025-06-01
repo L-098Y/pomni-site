@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Pomni Effect</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #301934, #5f4b8b);
+      color: #fceaff;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      animation: floaty 3s ease-in-out infinite;
+    }
+
+    @keyframes floaty {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      max-width: 600px;
+      margin: 2rem auto;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+
+    a {
+      color: #ffade7;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: #ffffff;
+    }
+
+    .footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to The Pomni Effect</h1>
+  <div class="box">
+    <p>This is a personal space — created to process sensations, feelings, and memories inspired by Pomni and similar characters.</p>
+    <p>You're safe here. Let yourself feel, reflect, and grow.</p>
+    <p><a href="#more">Scroll down to discover more soon...</a></p>
+  </div>
+  <div class="footer">Created with care by you — powered by GitHub Pages</div>
+</body>
+</html>
