@@ -1,63 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Pomni Effect</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pomni Chat</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
     body {
-      background: linear-gradient(135deg, #301934, #5f4b8b);
-      color: #fceaff;
-      font-family: 'Segoe UI', sans-serif;
-      text-align: center;
-      padding: 2rem;
+      display: flex;
+      height: 100vh;
+      background-color: #2f3136;
+      color: white;
     }
 
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      animation: floaty 3s ease-in-out infinite;
+    /* Sidebar */
+    .sidebar {
+      width: 80px;
+      background-color: #202225;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 10px;
     }
 
-    @keyframes floaty {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
+    .server-icon {
+      width: 50px;
+      height: 50px;
+      background-color: #5865f2;
+      border-radius: 50%;
+      margin: 10px 0;
+      cursor: pointer;
+      transition: transform 0.2s;
     }
 
-    .box {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      padding: 1.5rem;
-      border-radius: 1rem;
-      max-width: 600px;
-      margin: 2rem auto;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    .server-icon:hover {
+      transform: scale(1.1);
     }
 
-    a {
-      color: #ffade7;
-      text-decoration: none;
-      font-weight: bold;
+    /* Main content area */
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background-color: #36393f;
     }
 
-    a:hover {
-      color: #ffffff;
+    .top-bar {
+      height: 50px;
+      background-color: #2f3136;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      border-bottom: 1px solid #1e1f22;
     }
 
-    .footer {
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      opacity: 0.6;
+    .content {
+      flex: 1;
+      padding: 20px;
+      overflow-y: auto;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to The Pomni Effect</h1>
-  <div class="box">
-    <p>This is a personal space — created to process sensations, feelings, and memories inspired by Pomni and similar characters.</p>
-    <p>You're safe here. Let yourself feel, reflect, and grow.</p>
-    <p><a href="#more">Scroll down to discover more soon...</a></p>
+  <div class="sidebar">
+    <div class="server-icon" title="Pomni Server"></div>
+    <div class="server-icon" title="Another Server"></div>
   </div>
-  <div class="footer">Created with care by you — powered by GitHub Pages</div>
+
+  <div class="main">
+    <div class="top-bar">
+      <h3># welcome</h3>
+    </div>
+    <div class="content">
+      <p>Welcome to your Pomni-inspired private space!</p>
+      <p>Customize this layout however you like.</p>
+    </div>
+  </div>
 </body>
 </html>
